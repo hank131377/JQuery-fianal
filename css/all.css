@@ -1,0 +1,366 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.connect{
+    height: 30px;
+    background: #F6F6F6;
+}
+
+.connect a{
+    padding: 5px 10px;
+    height: 30px;
+    float: right;
+    text-decoration: none;
+}
+
+.connect img{
+    padding-right: 5px;
+}
+
+.fb{
+    color: #4460A0;
+}
+
+.twitter{
+    color: #00AAEC;
+    border-left: solid 1px #CCCCCC;
+}
+
+.connect a:hover{
+    opacity: 0.5;
+}
+
+.title{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h1{
+    width: 225px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.first{
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 13px 0;
+}
+
+.first li{
+    width: 100px;
+    text-align: center;
+}
+
+.title a{
+    height: 50px;
+    font-size: 20px;
+    color: #00CC99;
+    text-decoration: none;
+    display: block;
+}
+
+.second a{
+    height: 50px;
+}
+
+.second li{
+    line-height: 50px;
+    text-align: center;
+    display: none;
+    background: #F6F5F5;
+    position: relative;
+    z-index: 10;
+}
+
+.first a:hover{
+    border-bottom: solid 5px;
+}
+
+.second li a:hover{
+    border: none;
+    color: #FFFFFF;
+    background: #00CC99;
+}
+
+.content .text{
+    height: 128px;
+    width: 1024px;
+    color: #FFFFFF;
+    font-size: 32px;
+    line-height: 64px;
+    background: rgba(0,0,0,0.3);
+    margin: 111px 0px;
+    padding-left: 20px;
+    position: absolute;
+    z-index: 5;
+}
+
+.banner{
+    margin-top: 13px;
+    position: relative;
+    z-index: auto;
+}
+
+.banner img{
+    width: 1024px;
+    height: 350px;
+}
+
+.introduce ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.introduce ul li{
+    width: 300px;
+    height: 340px;
+    text-align: center;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.introduce img{
+    padding-top: 20px;
+}
+
+.se{
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.th{
+    padding-bottom: 20px;
+}
+
+.introduce{
+    margin-top: 50px;
+}
+
+.introduce h3{
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0px;
+}
+
+.introduce p{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    margin: 0 13px;
+}
+
+.introduce ol li{
+    height: 16px;
+    text-align: left;
+    list-style: disc;
+    margin: 8px 0px;
+    margin-left: 30px;
+    border: none;
+    box-shadow: none;
+}
+
+.compare{
+    margin-top: 50px;
+}
+
+.compare h4{
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.compare table{
+    width: 100%;
+    text-align: left;
+}
+
+.compare tr{
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    line-height: 50px;
+    height: 50px;
+}
+
+.compare th,td{
+    padding-left: 15px;
+}
+
+.compare th{
+    font-weight: bolder;
+}
+
+.compare th{
+    background: #F7F7F7;
+}
+
+.compare tr:hover td{
+    color: #FFFFFF;
+    background: #00CC99;
+}
+
+.tdcolor{
+    color: #00CC99;
+    font-weight: bolder;
+}
+
+.message{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(#00644B,#009871);
+}
+
+.message p{
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.message form{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left{
+    width: 40%;
+}
+
+.left textarea{
+    width: 100%;
+    height: 95%;
+    outline: none;
+}
+
+.right{
+    width: 40%;
+}
+
+.right label{
+    color: #FFFFFF;
+}
+
+.right input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    outline: none;
+}
+
+.right button{
+    height: 15%;
+    width: 20%;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: #00CC99;
+    border: solid 1px #00CC99;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+
+.footer p{
+    line-height: 20px;
+}
+
+.footer span{
+    color: #E12E81;
+}
+
+.gotop{
+    font-size: 50px;
+    position: fixed;
+    color: blue;
+    text-decoration: none;
+    right: 15%;
+    bottom: 10%;
+}
+
+@media (max-width:768px){
+    .connect .twitter{
+        margin-right: 15px;
+    }
+    .content .text{
+        width: 100%;
+    }
+    .introduce ul{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .introduce li{
+        margin-top: 35px;
+    }
+    .gotop{
+        right: 0;
+        bottom: 10%;
+    }
+}
